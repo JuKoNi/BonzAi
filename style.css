@@ -10,30 +10,33 @@ h1 h2 h3 h4 {
     font-family: 'Maven Pro', serif;
 }
 
-/** RAINBOW BUTTON **/
+/** GRADIENT BUTTON **/
 .wrapper .button {
     grid-area: button;
     background-color: #d1d1d1;
-    border-radius: 0.4rem;
-    color: #000;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    color: black;
     cursor: pointer;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    border: none;
-    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    /* border: none; */
     align-self: center;
     text-decoration: none;
-}  
-.wrapper .button:hover {
-    background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
-    animation: slidernbw 5s ease-in-out infinite;
-    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
 }
-@keyframes slidernbw {
+.wrapper .button:hover{
+    background-image: linear-gradient(to right, #8CA1A5 0%, #6D8299 25%, #8CA1A5 50%, #d0bfd5 75%, #D5BFBF 100%);
+    animation: slide 1.5s infinite alternate-reverse;
+    color: black;
+    background-size: 300%;
+    background-position: -100%;
+}
+@keyframes slide {
     to {
-     background-position: 20vw;
+        background-position: 20vw;
     }
 }
 
@@ -508,6 +511,8 @@ body {
     }
     .wrapper .main .card--big .img__wrapper > img {
         vertical-align: top;
+        opacity: 1;
+        transition: ease .8s;
     }
     .wrapper .main .card--big .img__wrapper > img:hover {
         opacity: 0;
