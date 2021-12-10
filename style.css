@@ -235,7 +235,6 @@ body {
     margin-bottom: 1rem;
 }
 .wrapper .booking form .booking__checkin label, .booking__checkout label {
-    /* transform: translateY(-0.2rem); */
     padding-bottom: 1rem;
 }
 .wrapper .booking .form label {
@@ -509,7 +508,7 @@ body {
     .wrapper .main .card--big .img__wrapper > img {
         vertical-align: top;
         opacity: 1;
-        transition: ease .8s;
+        transition: ease 0.8s;
     }
     .wrapper .main .card--big .img__wrapper > img:hover {
         opacity: 0;
@@ -536,7 +535,7 @@ body {
 
     .wrapper .footer .nav--footer figure {
         font-size: 1.5rem;
-        min-width: 75.2px;
+        min-width: 4.7rem;
     }
     .wrapper .footer .nav--footer .figures figure:hover {
         transform: translateY(0.375rem);
